@@ -17,6 +17,10 @@ spec:
         app: payment-service
 
     spec:
+
+      imagePullSecrets:
+      - name: ecr-secret
+
       containers:
       - name: payment-service
 
